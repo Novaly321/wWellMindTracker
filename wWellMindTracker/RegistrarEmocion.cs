@@ -12,8 +12,9 @@ namespace wWellMindTracker
 {
     public partial class frmRegistrarEmocion : Form
     {
-
+        private List<string> emociones = new List<string>();
         private string nombreusuario;
+        private int puntaje = 0;
 
         public frmRegistrarEmocion(string nombre)
         {
@@ -35,34 +36,39 @@ namespace wWellMindTracker
             if (cmbEmociones.SelectedIndex == -1)
             {
 
-                MessageBox.Show("Selecciona una emoción antes de continuar.");
+                MessageBox.Show("Por favor selecciona una emoción antes de registrar.","Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
 
             }
 
             string tipo = cmbEmociones.SelectedItem.ToString();
-            Emocion emocion = EmocionFactory.CrearEmocion(tipo);
+            emociones.Add(tipo);
 
+            if (tipo.Contains("Positiva"))
+            {
+                puntaje += 10;
+            }
+            else if (tipo.Contains("Neutral"))
+            {
+                puntaje += 5;
+            }
+            else
+            {
+                puntaje += 2;
+            }
 
-            lblResultado.Text = emocion.Mensaje();
-            MessageBox.Show(emocion.Mensaje(), "Registro exitoso");
-
+            MessageBox.Show($"Emoción '{tipo}' registrada correctamente.","Registro exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
         private void btnVerProgerso_Click(object sender, EventArgs e)
         {
 
-            frmProgreso progreso = new frmProgreso(nombreusuario);
-            progreso.Show();
+            frmProgreso progreso = new frmProgreso(nombreusuario, emociones, puntaje);
+            progreso.ShowDialog();
             this.Hide();
 
-
         }
-
-
-
-
 
 
     }

@@ -18,10 +18,12 @@ namespace wWellMindTracker
         private static int puntaje = 0;
 
 
-        public frmProgreso(string nombre)
+        public frmProgreso(string nombre, List<string> emociones, int puntos)
         {
             InitializeComponent();
             nombreusuario = nombre;
+            historial = emociones;
+            puntaje = puntos;
         }
 
         private void frmProgreso_Load(object sender, EventArgs e)
@@ -30,7 +32,7 @@ namespace wWellMindTracker
             lblTitulo.Text = $"Progreso De {nombreusuario}";
             lstRegistro.Items.Clear();
 
-            if (historial.Count == 0)
+            if (historial.Count == 0 || historial == null)
             {
                 lstRegistro.Items.Add("Aún no has registrado emociones.");
             }

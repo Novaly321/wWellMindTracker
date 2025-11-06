@@ -37,7 +37,7 @@
             // btnContinuar
             // 
             this.btnContinuar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContinuar.Location = new System.Drawing.Point(258, 252);
+            this.btnContinuar.Location = new System.Drawing.Point(253, 238);
             this.btnContinuar.Name = "btnContinuar";
             this.btnContinuar.Size = new System.Drawing.Size(142, 52);
             this.btnContinuar.TabIndex = 0;
@@ -68,9 +68,9 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(234, 207);
+            this.txtNombre.Location = new System.Drawing.Point(198, 193);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(201, 39);
+            this.txtNombre.Size = new System.Drawing.Size(281, 39);
             this.txtNombre.TabIndex = 3;
             // 
             // frmInicio

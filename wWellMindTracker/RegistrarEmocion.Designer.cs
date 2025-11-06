@@ -38,9 +38,9 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(183, 223);
+            this.btnRegistrar.Location = new System.Drawing.Point(138, 202);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(173, 77);
+            this.btnRegistrar.Size = new System.Drawing.Size(173, 62);
             this.btnRegistrar.TabIndex = 0;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -49,9 +49,9 @@
             // btnVerProgerso
             // 
             this.btnVerProgerso.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerProgerso.Location = new System.Drawing.Point(380, 223);
+            this.btnVerProgerso.Location = new System.Drawing.Point(336, 202);
             this.btnVerProgerso.Name = "btnVerProgerso";
-            this.btnVerProgerso.Size = new System.Drawing.Size(167, 77);
+            this.btnVerProgerso.Size = new System.Drawing.Size(259, 62);
             this.btnVerProgerso.TabIndex = 1;
             this.btnVerProgerso.Text = "Ver Progreso";
             this.btnVerProgerso.UseVisualStyleBackColor = true;
@@ -70,12 +70,11 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(333, 318);
+            this.lblResultado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(82, 343);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(55, 34);
+            this.lblResultado.Size = new System.Drawing.Size(0, 20);
             this.lblResultado.TabIndex = 3;
-            this.lblResultado.Text = "----";
             // 
             // cmbEmociones
             // 
