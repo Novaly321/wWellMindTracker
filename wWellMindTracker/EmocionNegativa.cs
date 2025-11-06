@@ -14,7 +14,6 @@ namespace wWellMindTracker
 
             Nombre = "Negativa";
 
-
         }
 
         public override string Mensaje()

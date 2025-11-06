@@ -22,6 +22,5 @@ namespace wWellMindTracker
             return "Mantén la calma, estás en equilibrio emocional.";
         }
 
-
     }
 }
