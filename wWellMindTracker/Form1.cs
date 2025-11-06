@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace wWellMindTracker
 {
-    public partial class Form1 : Form
+    public partial class frmInicio : Form
     {
-        public Form1()
+        public frmInicio()
         {
             InitializeComponent();
+        }
+
+        private void btnContinuar_Click(object sender, EventArgs e)
+        {
+
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            {
+                MessageBox.Show("Por favor ingresa tu nombre antes de continuar.", "Atención");
+                return;
+            }
+
+            // Guardar El Nombre Del Usuario Para Las Demas Interfacez
+            frmRegistrarEmocion registrar = new frmRegistrarEmocion(txtNombre.Text);
+            registrar.Show();
+            this.Hide();
+
         }
     }
 }
