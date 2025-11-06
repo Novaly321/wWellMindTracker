@@ -27,8 +27,6 @@ namespace wWellMindTracker
             lblBienvedida.Text = $"Hola {nombreusuario}, Como Te Sientes hoy?";
             cmbEmociones.Items.Add(new string[] {"Positiva", "Negativa", "Neutra"});
             
-
-
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -39,8 +37,6 @@ namespace wWellMindTracker
 
                 MessageBox.Show("Selecciona una emoción antes de continuar.");
                 return;
-
-
 
             }
 
@@ -63,6 +59,8 @@ namespace wWellMindTracker
 
 
         }
+
+
 
 
 

@@ -31,6 +31,7 @@ namespace wWellMindTracker
             registrar.Show();
             this.Hide();
 
+
         }
     }
 }
