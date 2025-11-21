@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbConnection.cs" />
     <Compile Include="Emocion.cs" />
     <Compile Include="EmocionFactory.cs" />
     <Compile Include="EmocionNegativa.cs" />
